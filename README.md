@@ -9,24 +9,27 @@ puzzle having only one solution), and this program will solve all of them in jus
 4 minutes, so nearly 200 per second.
 
 The code is well commented, but is farily long to support the various different
-techniques for narrowing the solution space.
+techniques for narrowing the solution space. All the code is in one file, which is
+just the way it is.
+
+I have included a file of tests, including one or two with multiple solutions.
 
 sudoku -h generates a help screen.
 It will generae all possible solutions to the puzzle.
 Puzzles are specified with the initial state all on one line, so for:
 
-Initial board state:
-3 0 0   0 8 0   0 0 0 
-0 0 0   7 0 0   0 0 5 
-1 0 0   0 0 0   0 0 0 
+Initial board state:  
+3 0 0 &nbsp; &nbsp; 0 8 0 &nbsp; &nbsp; 0 0 0  
+0 0 0 &nbsp; &nbsp; 7 0 0 &nbsp; &nbsp; 0 0 5  
+1 0 0 &nbsp; &nbsp; 0 0 0 &nbsp; &nbsp; 0 0 0  
 
-0 0 0   0 0 0   3 6 0 
-0 0 2   0 0 4   0 0 0 
-0 7 0   0 0 0   0 0 0 
+0 0 0 &nbsp; &nbsp; 0 0 0 &nbsp; &nbsp; 3 6 0  
+0 0 2 &nbsp; &nbsp; 0 0 4 &nbsp; &nbsp; 0 0 0  
+0 7 0 &nbsp; &nbsp; 0 0 0 &nbsp; &nbsp; 0 0 0  
 
-0 0 0   0 6 0   1 3 0 
-0 4 5   2 0 0   0 0 0 
-0 0 0   0 0 0   8 0 0
+0 0 0 &nbsp; &nbsp; 0 6 0 &nbsp; &nbsp; 1 3 0  
+0 4 5 &nbsp; &nbsp; 2 0 0 &nbsp; &nbsp; 0 0 0  
+0 0 0 &nbsp; &nbsp; 0 0 0 &nbsp; &nbsp; 8 0 0  
 
 run:
 
