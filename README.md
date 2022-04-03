@@ -1,5 +1,5 @@
 # Sudoku
-Sudoku solver written in Haskell. Very fast.
+Sudoku solver written in Haskell. Very fast execution speed.
 
 I wrote this initially in 2015 while learning Haskell. I emphasized speed of execution
 and heuristics/techniques that would quickly solve hard puzzles.
@@ -33,4 +33,19 @@ Initial board state:
 
 run:
 
-sudoku 300080000300080000000700005100000000000000360002004000070000000000060130045200000000000800
+sudoku 300080000000700005100000000000000360002004000070000000000060130045200000000000800
+
+This software will also accept a puzzle and see if by removing any of the single clues
+whether the resulting puzzle has a unique solution. So:
+
+sudoku -r 300080000000700005100000000000000360002004000070000000000060130045200000000000852
+
+results in:
+
+Puzzles having one solution and one more empty cell:
+300080000000700005100000000000000360002004000070000000000060130045200000000000802 (18)
+300080000000700005100000000000000360002004000070000000000060130045200000000000850 (18)
+
+Puzzles found with one solution and one fewer filled element: 2
+Total time: 0.1918 sec.
+
